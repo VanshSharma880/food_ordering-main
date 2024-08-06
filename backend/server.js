@@ -11,7 +11,7 @@ import discountRouter from "./routes/discountRoute.js"
 
 // app config
 const app = express()
-const port = 4000
+const port = process.env.port || 4000
 
 app.use(express.urlencoded({ extended: true }));
 
