@@ -1,13 +1,10 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-export const  connectDB = async () =>{
-    await mongoose.connect("mongodb+srv://svansh880:nF7QITr0oP19Iehu@cluster0.kcsjikl.mongodb.net/My_FoodOrderingProject").then(()=>console.log("DB Connected"));
+dotenv.config();
+
+export const connectDB = async () => {
+    await mongoose.connect(process.env.MONGODB_URI)
+        .then(() => console.log("DB Connected"))
+        .catch((err) => console.error("DB Connection Error: ", err));
 }
-
-
-// add your mongoDB connection string above.
-// Do not use '@' symbol in your database user's password else it will show an error.
-
-//svansh880
-//MONGODB_Project password: nF7QITr0oP19Iehu
-
