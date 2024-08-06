@@ -3,7 +3,8 @@ export const StoreContext = createContext(null);
 import axios from "axios";
 
 const StoreContextProvider = (props)=>{
-    const url = "http://localhost:4000"
+    // "http://localhost:4000" 
+    const url ="https://food-ordering-backend-wrr1.onrender.com"
     const [category_list, setCategoryList] = useState([]);
 
     const fetchCategoryList = async () => {
