@@ -13,13 +13,13 @@
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #49557e;
+  color: #222831;
   font-size: 18px;
 }
 
 .navbar-menu .active {
   padding-bottom: 2px;
-  border-bottom: 2px solid #49557e;
+  border-bottom: 2px solid #222831;
 }
 
 .navbar-right {
@@ -30,12 +30,20 @@
 
 .search-icon {
   cursor: pointer;
+  width: 35px;  
+  height: 35px; 
+  border-radius: 50%; 
 }
 
 .navbar-search-icon {
   position: relative;
 }
 
+.navbar-basketCart{
+  width: 35px;  
+  height: 35px; 
+  border-radius: 50%; 
+}
 .navbar-search-icon .dot {
   position: absolute;
   min-width: 10px;
@@ -63,6 +71,12 @@
 
 .navbar-profile {
   position: relative;
+}
+
+.profile-image {
+  width: 40px;  
+  height: 40px; 
+  border-radius: 50%; 
 }
 
 .navbar-profile-dropdown {
